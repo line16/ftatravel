@@ -12,15 +12,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="bg-gray-700">
+      <div className="w-10/12 mx-auto px-4">
         <div className="flex justify-between items-end">
           <div className="flex space-x-4">
             {/* Logo */}
             <div>
               <Link href="/" className="flex items-center py-5 px-2">
                 <Image
-                  src="/logo.png"
+                  src="/logo/logo.png"
                   width={65}
                   height={65}
                   alt="logo"
@@ -30,43 +30,31 @@ const Navbar = () => {
           </div>
 
           {/* Primary Navbar items */}
-          <div className="hidden md:flex items-end space-x-1  font-semibold">
-            <Link
-              href="/"
-              className="py-5 px-3 text-gray-700 hover:text-rose-300"
-            >
-              HOME
-            </Link>
+          <div className=" md:flex items-end font-semibold">
             <Link
               href="/About"
-              className="py-5 px-3 text-gray-700 hover:text-rose-300"
+              className="py-5 px-3 text-green-700 hover:text-rose-300"
             >
-              ABOUT
+              OM OS
             </Link>
             <Link
               href="/Feature"
               className="py-5 px-3 text-gray-700 hover:text-rose-300"
             >
-              FEATURE
-            </Link>
-            <Link
-              href="/Service"
-              className="py-5 px-3 text-gray-700 hover:text-rose-300"
-            >
-              SERVICE
+              PRODUKTER
             </Link>
             <Link
               href="/Contact"
               className="py-5 px-3 text-gray-700 hover:text-rose-300"
             >
-              CONTACT
+              KONTAKT
             </Link>
-            <Link
+            {/* <Link
               href="/ADMIN"
               className="py-5 px-3 text-gray-700 hover:text-rose-300"
             >
               Admin
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Button */}
