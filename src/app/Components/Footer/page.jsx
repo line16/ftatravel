@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram, FaVimeoV } from "react-icons/fa";
-import useRequestData from "../../../../Hooks/useRequestData";
+import useRequestData from "../../../Hooks/useRequestData";
 
 const Footer = () => {
   const { data, isLoading, error, makeRequest } = useRequestData();

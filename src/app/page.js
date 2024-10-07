@@ -1,4 +1,4 @@
-import Header from "../../Components/Header/Header";
+import Header from "./Components/Header/Header";
 import About from "./Pages/About/page";
 
 export default function Home() {
